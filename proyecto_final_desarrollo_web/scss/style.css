@@ -25,7 +25,10 @@ h1 {
 .menu-navbar {
   background-color: #4af094;
   width: 100%;
-  top: 0;
+  position: fixed;
+  top: 0px;
+  z-index: 50;
+  box-shadow: 0 8px 15px rgb(100, 100, 100);
 }
 
 .menu-navbar a {
@@ -43,6 +46,102 @@ h1 {
 .menu-navbar .logo-a {
   color: white;
   font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+# BIENVENIDA
+--------------------------------------------------------------*/
+#bienvenida {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/bienvenida-portada.jpg) top center fixed;
+  background-size: cover;
+}
+
+#bienvenida .bienvenida-logo {
+  margin: 20px;
+}
+
+#bienvenida .bienvenida-logo img {
+  max-width: 100%;
+}
+
+#bienvenida .bienvenida-container {
+  background: rgba(0, 0, 0, 0.8);
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#bienvenida h1 {
+  margin: 30px 0 10px 0;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #bienvenida h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+#bienvenida h2 {
+  color: #999;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  #bienvenida h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+  #bienvenida h2 .rotating {
+    display: block;
+  }
+}
+#bienvenida .rotating > .animated {
+  display: inline-block;
+}
+
+#bienvenida .actions a {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+#bienvenida .btn-get-started {
+  background: #4af094;
+  border: 2px solid #4af094;
+  color: #fff;
+}
+
+#bienvenida .btn-get-started:hover {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#bienvenida .btn-services {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#bienvenida .btn-services:hover {
+  background: #4af094;
+  border: 2px solid #4af094;
 }
 
 /*--------------------------------------------------------------
@@ -250,8 +349,19 @@ a:focus {
 # FORMULARIO
 --------------------------------------------------------------*/
 .formulario {
-  height: 700px;
-  margin: 20px 20px 20px 20px;
+  margin: 100px 20px 20px 20px;
+}
+
+#form4Example2 {
+  border-radius: 50px;
+}
+
+#form4Example4 {
+  border-radius: 25px;
+}
+
+#boton-enviar {
+  border-radius: 50px;
 }
 
 /*--------------------------------------------------------------
